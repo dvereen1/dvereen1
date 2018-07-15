@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/item_adv_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:textSize="26sp"
+        android:visibility="visible"
+        android:gravity="center_vertical|right"
+        android:padding="20dp"
+        android:background="@drawable/chatfrom_bg_focused"
+        android:hint="left"
+        />
+
+
+    <TextView
+        android:id="@+id/item_adv_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:textSize="26sp"
+        android:hint="right"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/chatto_bg_focused"
+        android:padding="20dp"
+        android:paddingRight="10dp"/>
+
+
+
+
+</RelativeLayout>

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
+
     private ArrayList<Fragment> fragmentList;
 
     public ViewPagerAdapter(FragmentManager fm, ArrayList<Fragment> fragmentList) {
@@ -30,7 +31,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     }
 
     public void updateList(ArrayList<Fragment> fragmentList){
-        this.fragmentList = fragmentList;
+        this.fragmentList = fragmentList; 
         notifyDataSetChanged();
     }
 

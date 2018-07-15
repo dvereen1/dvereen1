@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NotificationActivity">
+
+    <Button
+        android:id="@+id/notifi_small_bt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="SmallNotif"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/notifi_big_bt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="BigNotif"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/notifi_pic_bt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="PicNotif"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

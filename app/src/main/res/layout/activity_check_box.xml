@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CheckBoxActivity">
+
+    <CheckBox
+    android:id="@+id/checkbox1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+        android:textSize="26sp"
+    android:text="Checkbox1"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Checkbox2"/>
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Checkbox3"/>
+    
+    <Button
+        android:id="@+id/check_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="26sp"
+        android:text="Submit"/>
+
+</LinearLayout>
