@@ -18,12 +18,13 @@ public class HandlerActivity extends BaseActivity {
     @BindView(R.id.handler_et)
     EditText editText;
 
+
     @OnClick(R.id.handler_countdown)
             public void countDown(View view){
         runHangler.postDelayed(runnable, 1000);
     }
 
-    Handler downloadHandler = new Handler(){
+   /* Handler downloadHandler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -40,7 +41,7 @@ public class HandlerActivity extends BaseActivity {
                     break;
             }
         }
-    };
+    };*/
 
 
     Handler runHangler = new Handler();
@@ -65,7 +66,7 @@ public class HandlerActivity extends BaseActivity {
 
 
 
-    @OnClick(R.id.handler_download)
+    /*@OnClick(R.id.handler_download)
     public void download(View view){
         new Thread(new Runnable() {
             @Override
@@ -99,7 +100,7 @@ public class HandlerActivity extends BaseActivity {
             }
         }).start();
 
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

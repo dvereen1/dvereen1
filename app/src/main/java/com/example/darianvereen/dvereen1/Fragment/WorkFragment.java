@@ -17,13 +17,14 @@ import com.example.darianvereen.dvereen1.MainActivity;
 import com.example.darianvereen.dvereen1.R;
 import com.example.darianvereen.dvereen1.activity.AdvanceListViewActivity;
 import com.example.darianvereen.dvereen1.activity.Quiz2Activity;
+import com.example.darianvereen.dvereen1.activity.Quiz5Activity;
 
 /**
 
  */
 public class WorkFragment extends Fragment {
 
-    private Button q1, q2, q3, sub;
+    private Button q1, q2, q5, sub;
 
 
 
@@ -36,7 +37,7 @@ public class WorkFragment extends Fragment {
 
         q1 =  (Button) view.findViewById(R.id.quiz1_btn);
         q2= (Button) view.findViewById(R.id.quiz2_btn);
-        q3= (Button) view.findViewById(R.id.quiz3_btn);
+        q5 = (Button) view.findViewById(R.id.quiz5_btn);
         sub= (Button) view.findViewById(R.id.btn_submit);
 
 
@@ -52,6 +53,15 @@ public class WorkFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(getActivity(), Quiz2Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        q5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), Quiz5Activity.class);
                 startActivity(intent);
             }
         });

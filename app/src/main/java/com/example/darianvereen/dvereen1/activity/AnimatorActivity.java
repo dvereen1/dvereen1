@@ -24,7 +24,7 @@ public class AnimatorActivity extends BaseActivity {
 
     @OnClick(R.id.animator_trans)
     public void trans(){
-        ObjectAnimator animator = ObjectAnimator.ofFloat(tv, "translationX",  0, 200, -200, 0, 100); //translationY
+        ObjectAnimator animator = ObjectAnimator.ofFloat(tv, "translationX",  -200, 200, -200, 0, 100); //translationY
         animator.setDuration(2000);
         animator.start();
 
@@ -120,12 +120,15 @@ public class AnimatorActivity extends BaseActivity {
         animator.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
+                tv.setVisibility(View.INVISIBLE);
+                showToast("Initial Position:" + tv.getLeft());
                 showToast("Started");
                 LogUtil.LogD("Yan","animation start");
             }
 
             @Override
             public void onAnimationEnd(Animator animation) {
+                tv.setVisibility(View.VISIBLE);
                 showToast("Ended");
                 LogUtil.LogD("Yan","animation end");
             }

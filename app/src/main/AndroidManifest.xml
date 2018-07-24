@@ -33,7 +33,8 @@
         <activity android:name=".activity.AnimationActivity" />
         <activity android:name=".activity.AnimatorActivity" />
         <activity android:name=".activity.UpdateAndResultActivity" />
-        <activity android:name=".activity.GestureActivity"></activity>
+        <activity android:name=".activity.GestureActivity" />
+        <activity android:name=".activity.Quiz5Activity"></activity>
     </application>
 
 </manifest>
